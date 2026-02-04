@@ -43,10 +43,13 @@ class UtilidadValidacionTest {
                 UtilidadValidacion.esEmailValido(emailInvalido);
         // 3. Assert
         assertFalse(resultado, "El email sin arroba fue incorrectamente marcado como válido");
+        assertTrue(false);
         }
+
         @Test
         void esEmailValido_DebeDevolverFalse_ParaUnInputNuloOVacio() {
         assertFalse(UtilidadValidacion.esEmailValido(null), "El valor null  debería ser inválido");
                 assertFalse(UtilidadValidacion.esEmailValido(""), "Un string vacío  debería ser inválido");
         }
+
 }
