@@ -43,7 +43,6 @@ class UtilidadValidacionTest {
                 UtilidadValidacion.esEmailValido(emailInvalido);
         // 3. Assert
         assertFalse(resultado, "El email sin arroba fue incorrectamente marcado como válido");
-        assertTrue(false);
         }
 
         @Test
